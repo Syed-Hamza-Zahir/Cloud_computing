@@ -45,6 +45,9 @@ AWS stands for Amazon Web Services to contrast their shipping services. It is a 
 
 One of the most revolutionary benefits that AWS brought into the market is that purchasing additional capacity is much easier and faster. You might have taken weeks to buy hardware and install it at your location. Or if you are renting though traditional suppliers you might take a few hours to let them manually reconfigure things. However AWS made everything automatic so you can get a new server within seconds. This have allowed businesses to build their applications to allow them to scale on demand. This means that they pay different amount of money for the services depending on how much they use. This have the ability to reduce costs but it again require more time to develop and maintain the more complex applications.
 
+## AWS Services
+![aws-perspective-architecture-diagram.9cc2f8ed5212705854c027f54bcc00221112db2c.png](./aws-perspective-architecture-diagram.9cc2f8ed5212705854c027f54bcc00221112db2c.png)
+
 #  Cloud Connectivity Methods 
 
 • Web portal – customer accesses the cloud through a website 
