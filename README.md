@@ -39,6 +39,12 @@
   
   - Disadvantages: Security might be a primary concern, expertise with application needs
 
+## AWS
+
+AWS stands for Amazon Web Services to contrast their shipping services. It is a collection of services that Amazon provides online. These are things like storage, backup, DNS, database, load balancing and maybe the most popular, virtual machine hosting. The concept about all this is the economy of scale. Amazon will build huge data centers and engineer them to provide the kind of services that most businesses need. Since they do it on a huge scale they are able to do it cheaper then if every business were to build their own from scratch. There are however lots of disadvantages like needing a lot more spare capacity and having to build something that fits everyone as opposed to something that fits a particular user. So it depends on the use case if you save money by using their services as opposed to making your own from scratch.
+
+One of the most revolutionary benefits that AWS brought into the market is that purchasing additional capacity is much easier and faster. You might have taken weeks to buy hardware and install it at your location. Or if you are renting though traditional suppliers you might take a few hours to let them manually reconfigure things. However AWS made everything automatic so you can get a new server within seconds. This have allowed businesses to build their applications to allow them to scale on demand. This means that they pay different amount of money for the services depending on how much they use. This have the ability to reduce costs but it again require more time to develop and maintain the more complex applications.
+
 #  Cloud Connectivity Methods 
 
 • Web portal – customer accesses the cloud through a website 
@@ -106,4 +112,6 @@ Cloud Security Implications/Considerations
   - Data protection technology (e.g., data loss prevention and encryption) 
 
 • You might choose to integrate your on-premises deployment with the SaaS deployment
+
+
 
