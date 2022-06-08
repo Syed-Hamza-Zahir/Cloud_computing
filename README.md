@@ -1,5 +1,5 @@
  #### Cloud_computing
-
+![Computer-Networks-Cloud-Computing-Diagrams-Cloud-Computing-Types.png](./Computer-Networks-Cloud-Computing-Diagrams-Cloud-Computing-Types.png)
 # Public Cloud 
 
 • A service provider makes resources, such as virtual machines (VMs), applications or storage, available to the general public over the Internet 
