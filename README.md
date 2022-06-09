@@ -48,73 +48,19 @@ One of the most revolutionary benefits that AWS brought into the market is that 
 ## AWS Services
 ![aws-perspective-architecture-diagram.9cc2f8ed5212705854c027f54bcc00221112db2c.png](./aws-perspective-architecture-diagram.9cc2f8ed5212705854c027f54bcc00221112db2c.png)
 
-#  Cloud Connectivity Methods 
+# Connect to Your Linux Instance using an SSH Client
+- ``ssh -i /path/my-key-pair.pem ec2-user@ec2-198-51-100-1.compute-1.amazonaws.com``
+- (``ssh -i /path/my-key-pair.pem user@ip_address`` )
 
-• Web portal – customer accesses the cloud through a website 
+# Copying Files Between Local Computer and Instance (AWS)
+- To copy files between your computer and your instance you can use an FTP service like FileZilla or the command scp which stands for secure copy.
+- To use scp with a key pair use the following command: ``scp -i path/to/key file/to/copy user@ip_address:path/to/file.``
+- To use it without a key pair, just omit the flag -i and type in the password of the user when prompted.
+- To copy an entire directory, add the -r recursive option:
+``scp -i path/to/key -r directory/to/copy user@ip_address:path/to/directory``
 
-• VPN – customer makes a VPN connection over the Internet to the cloud system 
-  
-  - Public cloud services may offer VPN appliances or native VPN through the network services control • Direct connection - A more predictable connection might be direct private connection via co-location facilities 
-  
-  - Referred to as cloud hotels, cloud providers partner with large data center providers 
- 
-  - Direct connections come in two Ethernet speeds of 1Gbps or 10Gbps 
- 
-• Telco managed – Individuals or organizations have a wider variety of connectivity with Telco providers 
- 
-  - Telco providers offer MPLS and Ethernet connection options and a variety of contract lengths
-
-# Security Implications/ Considerations
-
-Cloud Security Implications/Considerations 
-
-• You are not in control of your data 
-
-• The provider must have good controls and assurances in place 
-
-• You will need to implement compensating controls to cover any gaps discovered in the provider’s security e.g. encryption or local copy of the data
-
-• You will be responsible for the security of any aspect of the cloud that you are permitted to configure e.g. health record
-
-# IaaS Security Implications/Considerations 
-
-• Similar to the concerns of a traditional corporate data center 
-
-• You the customer will be responsible for all aspects of security at all levels of your network + firewalls
-
-  - Provider is responsible for security of physical equipment and personnel that maintains the physical equipment 
-
-• You the customer are responsible for ensuring compliance standards are evaluated and met 
-
-• An auditor will need to be able to determine if compliance requirements are met
-
-# PaaS Security Implications/Considerations 
-
-• The provider is responsible for physical equipment and platform/system availability 
-
-• You the customer are responsible for: 
-  
-  - Any applications you have configured on that platform 
-  
-  - Monitoring access and usage 
-  
-  - Keeping track of regulatory compliance 
-
-• One of the features you will have to decide on is whether or not you will include (and pay for) redundancy
-
-# SaaS Security Implications/Considerations 
-
-• The provider is responsible for most of the security 
-
-• You the customer are focused on application configuration and data protection 
-
-• You are also likely to be concerned with maintaining: 
-  
-  - Identity and Access Management (IAM) controls (e.g., single sign-on and federation) 
-  
-  - Data protection technology (e.g., data loss prevention and encryption) 
-
-• You might choose to integrate your on-premises deployment with the SaaS deployment
-
-
-
+# Deployment
+- Use SSH Agent plugin
+  - Add credentials - SSH username with private key
+  - Add the .pem private key created in AWS
+- Execute shell
