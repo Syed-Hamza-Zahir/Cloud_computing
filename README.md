@@ -64,3 +64,13 @@ One of the most revolutionary benefits that AWS brought into the market is that 
   - Add credentials - SSH username with private key
   - Add the .pem private key created in AWS
 - Execute shell
+
+# Connect to Your Linux Instance using an SSH Client
+- ``ssh -i /path/my-key-pair.pem user@ip_address`` 
+
+# Copying Files Between Local Computer and Instance (AWS)
+- To copy files between your computer and your instance you can use an FTP service like FileZilla or the command scp which stands for secure copy.
+- To use scp with a key pair use the following command: ``scp -i path/to/key file/to/copy user@ip_address:path/to/file.``
+- To use it without a key pair, just omit the flag -i and type in the password of the user when prompted.
+- To copy an entire directory, add the -r recursive option:
+``scp -i path/to/key -r directory/to/copy user@ip_address:path/to/directory``
