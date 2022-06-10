@@ -74,3 +74,6 @@ One of the most revolutionary benefits that AWS brought into the market is that 
 - To use it without a key pair, just omit the flag -i and type in the password of the user when prompted.
 - To copy an entire directory, add the -r recursive option:
 ``scp -i path/to/key -r directory/to/copy user@ip_address:path/to/directory``
+
+# 2-tier Architecture 
+![2-tier.png](./2-tier)
