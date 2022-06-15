@@ -76,4 +76,4 @@ One of the most revolutionary benefits that AWS brought into the market is that 
 ``scp -i path/to/key -r directory/to/copy user@ip_address:path/to/directory``
 
 # 2-tier Architecture 
-![2-tier.png](./2_tier.png)
+![two-tier.png](./twotier.png)
